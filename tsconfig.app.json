@@ -32,7 +32,7 @@
       "@contexts/*": ["./src/contexts/*"],
       "@contest/*": ["./src/contest/*"],
       "@layouts/*": ["./src/layouts/*"],
-      "@webRouting/*": ["./src/webRouting/*"],
+      "@webRouting/*": ["src/routes/*"],
       "@middleware/*": ["./src/middleware/*"],
       "@pages/*": ["./src/pages/*"]
     }

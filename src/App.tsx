@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import AppContextProvider from "@/contexts/AppContextProvider";
 import AppLayout from "@/layouts/AppLayout";
-import WebRouting from "@/webRouting/WebRouting";
+import AppRouting from "@/routes/AppRouting";
 
 const queryClient = new QueryClient();
 
@@ -18,7 +18,7 @@ const App = () => (
       <BrowserRouter>
         <AppContextProvider>
           <AppLayout>
-            <WebRouting />
+            <AppRouting />
           </AppLayout>
         </AppContextProvider>
       </BrowserRouter>
