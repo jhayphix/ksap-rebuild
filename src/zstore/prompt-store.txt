@@ -1,1 +1,1 @@
-give me a detailed strucure of the pages/
+give me a detailed strucure of the routes/
