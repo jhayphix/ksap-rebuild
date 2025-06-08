@@ -7,13 +7,6 @@ features/
 │ │ ├── PasswordResetForm.tsx # Form to reset password
 │ │ └── AuthButton.tsx # Buttons for login/logout/register
 │ │
-│ ├── pages/ # Route-level components related to auth
-│ │ ├── Login.tsx # Login page
-│ │ ├── Register.tsx # Registration page
-│ │ ├── Profile.tsx # User profile and account settings
-│ │ ├── PasswordReset.tsx # Password reset page
-│ │ └── ConfirmEmail.tsx # Email confirmation page
-│ │
 │ ├── authSlice.ts # Redux or Zustand slice for auth state (optional)
 │ ├── authApi.ts # API calls: login, logout, register, refresh token
 │ ├── useAuth.ts # Custom hook for auth context/state management
@@ -27,13 +20,6 @@ features/
 │ │ ├── ScholarshipFilter.tsx# Filtering and search UI
 │ │ └── ScholarshipStatusBadge.tsx # Status indicator (active, expired)
 │ │
-│ ├── pages/ # Route views for scholarships
-│ │ ├── List.tsx # List all scholarships
-│ │ ├── Create.tsx # Create scholarship page
-│ │ ├── Edit.tsx # Edit scholarship page
-│ │ ├── Details.tsx # Scholarship details page
-│ │ └── ManageApplications.tsx # Admin page for scholarship applications
-│ │
 │ ├── scholarshipApi.ts # API requests (CRUD for scholarships)
 │ ├── useScholarship.ts # Custom hooks for fetching/manipulating scholarships
 │ ├── scholarshipValidation.ts # Validation schemas for scholarship forms
@@ -45,12 +31,6 @@ features/
 │ │ ├── ApplicationStatusTracker.tsx # Tracks progress/status of application
 │ │ ├── ApplicationList.tsx # List applications (admin view)
 │ │ └── ApplicationReview.tsx # Component for reviewers/admins to review apps
-│ │
-│ ├── pages/ # Application-related routes
-│ │ ├── Submit.tsx # Application submission page
-│ │ ├── View.tsx # View submitted application
-│ │ ├── Edit.tsx # Edit existing application (if allowed)
-│ │ └── Review.tsx # Admin/reviewer application review page
 │ │
 │ ├── applicationApi.ts # API calls for application CRUD and status updates
 │ ├── useApplication.ts # Custom hooks for application state and actions

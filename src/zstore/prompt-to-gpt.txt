@@ -1,1 +1,35 @@
-give me a detailed strucure of the pages/
+provide the below is the detailed pages/ 
+
+where should a page like dashboard , contact be ? no yapping
+
+pages/
+├── auth/
+│ ├── Login.tsx # Login page
+│ ├── Register.tsx # Registration page
+│ ├── ForgotPassword.tsx # Password reset request page
+│ └── Profile.tsx # User profile page
+│
+├── scholarships/
+│ ├── List.tsx # List all scholarships with filters/search
+│ ├── Create.tsx # Scholarship creation form
+│ ├── Edit.tsx # Scholarship edit form
+│ ├── Details.tsx # Scholarship detail page
+│
+├── applications/
+│ ├── Submit.tsx # Application submission form
+│ ├── View.tsx # View submitted application status/details
+│ ├── Edit.tsx # Edit existing application (if allowed)
+│
+├── admin/
+│ ├── Dashboard.tsx # Admin overview and stats
+│ ├── ManageScholarships.tsx # Scholarship management interface (CRUD)
+│ ├── ManageApplications.tsx # Application review and status update
+│ └── UserManagement.tsx # Admin user management page
+│
+├── home/
+│ ├── Home.tsx # Landing or home page
+│ └── About.tsx # About the website/organization
+│
+├── error/
+│ ├── NotFound.tsx # 404 page
+│ └── Unauthorized.tsx # Access denied page
