@@ -1,20 +1,22 @@
 src/
 │
-├── assets/ # Static assets (images, logos, etc.)
-├── components/ # Reusable UI components (Button, Card, Modal)
-├── features/ # Feature-specific logic, layouts and components
-├── styles/ # Base global styles, Tailwind component/util overrides and Custom keyframes/transitions
-├── hooks/ # Custom React hooks
-├── pages/ # Route-based components (Home, Login, Dashboard)
-├── routes/ # App routes with auth guards
-├── services/ # API calls (axios instances, authService, scholarshipService)
-├── contexts/ # React Context providers (auth, theme)
-├── utils/ # Helper functions (formatDate, validateEmail)
-├── types/ # TypeScript type definitions
-├── constants/ # Static values (roles, statuses)
-├── store/ (optional) # State management (Zustand, Redux)
-├── App.tsx # Root app component
-├── main.tsx # Entry point
-├── index.css # Tailwind base styles
-├── vite.config.ts # Vite configuration
-└── env.d.ts # Type definitions for env vars
+├── assets/                          # Static assets (images, logos, etc.)
+├── components/                      # Reusable UI components (Button, Card, Modal)
+├── constants/                       # Static values (roles, statuses)
+├── contexts/                        # React Context providers (auth, theme)
+├── features/                        # Feature-specific logic, layouts and components
+├── hooks/                           # Custom React hooks
+├── pages/                           # Route-based components (Home, Login, Dashboard)
+├── routes/                          # App routes with auth guards
+├── services/                        # API calls (axios instances, authService, scholarshipService)
+├── store/ (optional)                # State management (Zustand, Redux)
+├── styles/                          # Base global styles, Tailwind component/util overrides and Custom 
+├── types/                           # TypeScript type definitions
+├── utils/                           # Helper functions (formatDate, validateEmail)
+│
+├── App.tsx                          # Root app component
+├── env.d.ts                         # Type definitions for env vars
+├── index.css                        # Tailwind base styles
+├── main.tsx                         # Entry point
+└── vite.config.ts                   # Vite configuration
+

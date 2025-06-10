@@ -1,31 +1,31 @@
 pages/
-├── auth/
-│ ├── Login.tsx # /auth/login
-│ ├── Register.tsx # /auth/register
-│ ├── ForgotPassword.tsx # /auth/forgot-password
-│ └── Profile.tsx # /auth/profile
-
-├── scholarships/
-│ ├── List.tsx # /scholarships
-│ ├── Create.tsx # /scholarships/create
-│ ├── Edit.tsx # /scholarships/:id/edit
-│ └── Details.tsx # /scholarships/:id
+├── admin/
+│   ├── ManageApplications.tsx   # /admin/applications
+│   ├── ManageScholarships.tsx   # /admin/scholarships
+│   └── UserManagement.tsx       # /admin/users
 
 ├── applications/
-│ ├── Submit.tsx # /applications/submit
-│ ├── View.tsx # /applications/:id
-│ └── Edit.tsx # /applications/:id/edit
+│   ├── Edit.tsx                 # /applications/:id/edit
+│   ├── Submit.tsx               # /applications/submit
+│   └── View.tsx                 # /applications/:id
 
-├── admin/
-│ ├── ManageScholarships.tsx # /admin/scholarships
-│ ├── ManageApplications.tsx # /admin/applications
-│ └── UserManagement.tsx # /admin/users
-
-├── public/
-│ ├── Home.tsx # /
-│ ├── About.tsx # /about
-│ └── Contact.tsx # /contact
+├── auth/
+│   ├── ForgotPassword.tsx       # /auth/forgot-password
+│   ├── Login.tsx                # /auth/login
+│   ├── Profile.tsx              # /auth/profile
+│   └── Register.tsx             # /auth/register
 
 ├── error/
-│ ├── NotFound.tsx # 404
-│ └── Unauthorized.tsx # 401 / 403
+│   ├── NotFound.tsx             # 404
+│   └── Unauthorized.tsx         # 401 / 403
+
+├── public/
+│   ├── About.tsx                # /about
+│   ├── Contact.tsx              # /contact
+│   └── Home.tsx                 # /
+
+├── scholarships/
+│   ├── Create.tsx               # /scholarships/create
+│   ├── Details.tsx              # /scholarships/:id
+│   ├── Edit.tsx                 # /scholarships/:id/edit
+│   └── List.tsx                 # /scholarships
