@@ -7,18 +7,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@src/*": ["./src/*"],
-      "@data/*": ["./src/_data/*"],
-      "@assets/*": ["./src/assets/*"],
-      "@images/*": ["./src/assets/images/*"],
-      "@components/*": ["./src/components/*"],
-      "@contexts/*": ["./src/contexts/*"],
-      "@contest/*": ["./src/contest/*"],
-      "@layouts/*": ["./src/layouts/*"],
-      "@webRouting/*": ["src/routes/*"],
-      "@middleware/*": ["./src/middleware/*"],
-      "@pages/*": ["./src/pages/*"]
+      "@/*": ["./src/*"]
     },
     "noImplicitAny": false,
     "noUnusedParameters": false,
