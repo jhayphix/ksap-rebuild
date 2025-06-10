@@ -1,1 +1,1 @@
-Give me a detailed struture of the contexts/
+Give me a detailed struture (group some where neccessary) of the utils/

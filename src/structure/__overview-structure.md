@@ -9,6 +9,7 @@ src/
 ├── pages/                           # Route-based components (Home, Login, Dashboard)
 ├── routes/                          # App routes with auth guards
 ├── services/                        # API calls (axios instances, authService, scholarshipService)
+                                     # The service layer is your direct interface with the backend. It contains logic to make network requests.
 ├── store/ (optional)                # State management (Zustand, Redux)
 ├── styles/                          # Base global styles, Tailwind component/util overrides and Custom 
 ├── types/                           # TypeScript type definitions
