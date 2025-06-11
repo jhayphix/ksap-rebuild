@@ -1,8 +1,10 @@
+import NavigationContextProvider from "@/contexts/NavigationContextProvider";
+
 const AppContextProvider = ({ children }) => {
   return (
     <>
       {/* Register context here */}
-      {children}
+      <NavigationContextProvider>{children}</NavigationContextProvider>
     </>
   );
 };

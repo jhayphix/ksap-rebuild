@@ -1,13 +1,3 @@
-Now let's make use of either hooks or contexts, such that the routes can be assess dynamically 
-
-
-earlier i did the below, look into it and make the right edits so that it will be effective in the future and wont cause any problems
-
-there you think hook or context will help you do think ( base all imports from @/constants/routes/config)
-
-make it dynamic, simple and easy to edit in future and no spaghetty code 
-
-
 // React modules
 import { createContext } from "react";
 
