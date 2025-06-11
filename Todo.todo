@@ -1,15 +1,14 @@
-WORK ON STRUCTURE:
-    ☐ Work on app.jsx
-    ☐ Create context folder and app context provider
-    ☐ Create web routing folder
-    ☐ Create app layout folder
-    ☐ Create pages
+WORK ON NAVIGATIONS:
+    ☐ Create navigation constant
+    ☐ Create navigation context ( ask about using hooks)
+    ☐ Create all pages
+    ☐ Create routing for all pages
 
-WORK ON LOCAL DATA:
-    ☐ Import all data
+CREATE STYLES AND DIRECTIVES:
 
-IMPORT CONTEXTS:
-    ☐ Navigation context
+CREATE LAYOUT:
+    ☐ Create sidenavbar, top nav, main container and footer
 
-WORK ON NAVIGATION:
-    ☐ Create navitation context
+WORK ON SERVICES:
+
+CREATE SHCOLARSRHIP PAGE:

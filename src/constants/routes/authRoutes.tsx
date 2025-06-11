@@ -1,0 +1,73 @@
+import { MdLogin } from "react-icons/md";
+import { FaUserPlus, FaUser } from "react-icons/fa";
+import { iconSize, baseRoute } from "@/constants/routes/config";
+
+export const authRoutes = {
+  login: {
+    title: "Login",
+    path: `${baseRoute}/user/auth-selection`,
+    icon: <MdLogin size={iconSize} />,
+    end: false,
+    roles: ["GUEST"],
+    permissions: [],
+    layout: "public",
+  },
+  registerApplicant: {
+    title: "Register",
+    path: `${baseRoute}/applicant/register`,
+    icon: <FaUserPlus size={iconSize} />,
+    end: false,
+    roles: ["GUEST"],
+    permissions: [],
+    layout: "public",
+  },
+  registerAdmin: {
+    title: "Register Admin",
+    path: `${baseRoute}/admin/register`,
+    icon: <FaUserPlus size={iconSize} />,
+    end: false,
+    roles: ["SUPER_ADMIN"],
+    permissions: ["REGISTER_ADMIN"],
+    layout: "admin",
+  },
+  updateApplicantProfile: {
+    title: "Update Profile",
+    path: `${baseRoute}/applicant/:id/edit`,
+    getPath: (id: string) => `${baseRoute}/applicant/${id}/edit`,
+    icon: <FaUserPlus size={iconSize} />,
+    end: false,
+    roles: ["APPLICANT"],
+    permissions: ["EDIT_OWN_PROFILE"],
+    layout: "applicant",
+  },
+  updateAdminProfile: {
+    title: "Update Profile (Admin)",
+    path: `${baseRoute}/admin/:id/edit`,
+    getPath: (id: string) => `${baseRoute}/admin/${id}/edit`,
+    icon: <FaUserPlus size={iconSize} />,
+    end: false,
+    roles: ["ADMIN"],
+    permissions: ["EDIT_OWN_PROFILE"],
+    layout: "admin",
+  },
+  viewAdminProfile: {
+    title: "Admin Profile",
+    path: `${baseRoute}/admin/profile/:id`,
+    getPath: (id: string) => `${baseRoute}/admin/profile/${id}`,
+    icon: <FaUser size={iconSize} />,
+    end: false,
+    roles: ["ADMIN"],
+    permissions: ["VIEW_OWN_PROFILE"],
+    layout: "admin",
+  },
+  viewApplicantProfile: {
+    title: "Applicant Profile",
+    path: `${baseRoute}/applicant/profile/:id`,
+    getPath: (id: string) => `${baseRoute}/applicant/profile/${id}`,
+    icon: <FaUser size={iconSize} />,
+    end: false,
+    roles: ["APPLICANT"],
+    permissions: ["VIEW_OWN_PROFILE"],
+    layout: "applicant",
+  },
+};

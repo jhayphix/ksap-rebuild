@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import NotFoundPage from "@/pages/notFound/NotFoundPage";
+import NotFoundPage from "@/pages/error/NotFoundPage";
 
 const WebRouting = () => {
   const location = useLocation();
