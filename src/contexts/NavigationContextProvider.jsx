@@ -12,9 +12,9 @@ import { searchRoutes } from "@/constants/routes/searchRoutes";
 import { baseRoute } from "@/constants/routes/config";
 
 // Context
-const NavigationContext = createContext(null);
+export const NavigationContext = createContext(null);
 
-export const useNavigation = () => useContext(NavigationContext);
+export const useNavigationContext = () => useContext(NavigationContext);
 
 const NavigationContextProvider = ({ children }) => {
   // Nav groupings
