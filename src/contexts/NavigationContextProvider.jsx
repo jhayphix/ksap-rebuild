@@ -56,7 +56,7 @@ const NavigationContextProvider = ({ children }) => {
 
   const value = {
     baseRoute,
-    navRoutesByUserType,
+    navRoutesByRole,
     ...generalRoutes,
     ...authRoutes,
     ...userManagementRoutes,
