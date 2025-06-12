@@ -17,41 +17,46 @@ export const NavigationContext = createContext(null);
 export const useNavigationContext = () => useContext(NavigationContext);
 
 const NavigationContextProvider = ({ children }) => {
-  // Nav groupings
-  const defaultNavRoutesOnTop = [
+  // Navigation route groups
+  const commonNavTopRoutes = [
     generalRoutes.dashboard,
     externalScholarshipRoutes.externalScholarships,
   ];
-  const defaultNavRoutesOnBottom = [];
 
-  const adminRoutesOnlyList = [
+  const commonNavBottomRoutes = []; // Add footer nav routes if needed
+
+  const adminOnlyNavRoutes = [
     searchRoutes.searchAndFilter,
     userManagementRoutes.manageUsers,
   ];
-  const superAdminRoutesOnlyList = [
-    ...adminRoutesOnlyList,
+
+  const superAdminOnlyNavRoutes = [
+    ...adminOnlyNavRoutes,
     authRoutes.registerAdmin,
     scholarshipRoutes.createScholarship,
     externalScholarshipRoutes.createExternalScholarship,
   ];
-  const applicantRoutesOnlyList = [applicationRoutes.myApplications];
 
-  const getNavRoutes = (routes) => [
-    ...defaultNavRoutesOnTop,
-    ...routes,
-    ...defaultNavRoutesOnBottom,
+  const applicantOnlyNavRoutes = [applicationRoutes.myApplications];
+
+  // Combines top, role-specific, and bottom nav items
+  const buildNavRoutes = (roleRoutes) => [
+    ...commonNavTopRoutes,
+    ...roleRoutes,
+    ...commonNavBottomRoutes,
   ];
 
-  const navLinksByUserType = {
-    default: getNavRoutes([]),
-    superAdminRoutesOnly: getNavRoutes(superAdminRoutesOnlyList),
-    adminRoutesOnly: getNavRoutes(adminRoutesOnlyList),
-    applicantRoutesOnly: getNavRoutes(applicantRoutesOnlyList),
+  // Final nav map by user role
+  const navRoutesByRole = {
+    public: buildNavRoutes([]),
+    admin: buildNavRoutes(adminOnlyNavRoutes),
+    superAdmin: buildNavRoutes(superAdminOnlyNavRoutes),
+    applicant: buildNavRoutes(applicantOnlyNavRoutes),
   };
 
   const value = {
     baseRoute,
-    navLinksByUserType,
+    navRoutesByUserType,
     ...generalRoutes,
     ...authRoutes,
     ...userManagementRoutes,

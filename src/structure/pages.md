@@ -1,31 +1,42 @@
 pages/
-├── admin/
-│   ├── ManageApplications.tsx   # /admin/applications
-│   ├── ManageScholarships.tsx   # /admin/scholarships
-│   └── UserManagement.tsx       # /admin/users
-
-├── applications/
-│   ├── Edit.tsx                 # /applications/:id/edit
-│   ├── Submit.tsx               # /applications/submit
-│   └── View.tsx                 # /applications/:id
+├── general/
+│   ├── DashboardPage.tsx              # /dashboard
+│   └── AdminPanelPage.tsx             # /admin-panel
 
 ├── auth/
-│   ├── ForgotPassword.tsx       # /auth/forgot-password
-│   ├── Login.tsx                # /auth/login
-│   ├── Profile.tsx              # /auth/profile
-│   └── Register.tsx             # /auth/register
+│   ├── AuthSelectionPage.tsx          # /auth/choose
+│
+│   ├── applicant/
+│   │   ├── RegisterApplicantPage.tsx      # /auth/applicant/register
+│   │   ├── UpdateApplicantPage.tsx        # /auth/applicant/update
+│   │   └── ViewApplicantProfilePage.tsx   # /auth/applicant/profile
+│
+│   ├── admin/
+│   │   ├── RegisterAdminPage.tsx         # /auth/admin/register
+│   │   ├── UpdateAdminPage.tsx           # /auth/admin/update
+│   │   └── ViewAdminProfilePage.tsx      # /auth/admin/profile
+│
+│   └── ManageUsersPage.tsx               # /admin/users
+
+├── application/
+│   ├── MyApplicationsPage.tsx           # /applications/my
+│   ├── ViewApplicationPage.tsx          # /applications/:id
+│   ├── CreateApplicationPage.tsx        # /applications/create
+│   ├── UpdateApplicationPage.tsx        # /applications/:id/update
+│   ├── EvaluateApplicationPage.tsx      # /applications/:id/evaluate
+│   └── SearchApplicationPage.tsx        # /applications/search
+
+├── scholarship/
+│   ├── ViewScholarshipPage.tsx              # /scholarships/:id
+│   ├── ScholarshipApplicationsPage.tsx      # /scholarships/:id/applicants
+│   ├── CreateScholarshipPage.tsx            # /scholarships/create
+│   ├── UpdateScholarshipPage.tsx            # /scholarships/:id/update
+
+├── externalScholarship/
+│   ├── ExternalScholarshipsPage.tsx         # /external-scholarships
+│   ├── ViewExternalScholarshipPage.tsx      # /external-scholarships/:id
+│   ├── CreateExternalScholarshipPage.tsx    # /external-scholarships/create
+│   ├── UpdateExternalScholarshipPage.tsx    # /external-scholarships/:id/update
 
 ├── error/
-│   ├── NotFound.tsx             # 404
-│   └── Unauthorized.tsx         # 401 / 403
-
-├── public/
-│   ├── About.tsx                # /about
-│   ├── Contact.tsx              # /contact
-│   └── Home.tsx                 # /
-
-├── scholarships/
-│   ├── Create.tsx               # /scholarships/create
-│   ├── Details.tsx              # /scholarships/:id
-│   ├── Edit.tsx                 # /scholarships/:id/edit
-│   └── List.tsx                 # /scholarships
+│   └── NotFoundPage.tsx                     # 404 fallback

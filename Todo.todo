@@ -1,6 +1,6 @@
 WORK ON NAVIGATIONS:
-    ☐ Create navigation constant
-    ☐ Create navigation context ( ask about using hooks)
+    ✔ Create navigation constant @done(25-06-12 11:01)
+    ✔ Create navigation context ( ask about using hooks) @done(25-06-12 11:01)
     ☐ Create all pages
     ☐ Create routing for all pages
 
