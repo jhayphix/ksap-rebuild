@@ -1,7 +1,5 @@
 routes/
 ├── AppRouter.tsx              # Your main router setup (where <BrowserRouter> is used)
-├── index.tsx                  # Entry file exporting all route configs (aggregates all routes)
-├── routePaths.ts              # Centralized route constants (path strings, labels, icons)
 
 ├── publicRoutes.tsx           # Routes accessible to all (unauthenticated or not)
 │                              # e.g., home, dashboard, external scholarships, test

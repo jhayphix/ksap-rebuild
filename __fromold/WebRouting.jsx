@@ -80,7 +80,6 @@ const WebRouting = () => {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         {/* ✅ Public Routes */}
-        <Route path="/test" element={<TestPage />} />
         <Route path={homeRoute?.path} element={<DashboardPage />} />
         <Route path={dashboardRoute?.path} element={<DashboardPage />} />
         <Route
