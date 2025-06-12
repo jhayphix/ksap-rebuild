@@ -18,7 +18,7 @@ pages/
 │
 │   └── ManageUsersPage.tsx               # /admin/users
 
-├── application/
+├── applications/
 │   ├── MyApplicationsPage.tsx           # /applications/my
 │   ├── ViewApplicationPage.tsx          # /applications/:id
 │   ├── CreateApplicationPage.tsx        # /applications/create
@@ -26,13 +26,13 @@ pages/
 │   ├── EvaluateApplicationPage.tsx      # /applications/:id/evaluate
 │   └── SearchApplicationPage.tsx        # /applications/search
 
-├── scholarship/
+├── scholarships/
 │   ├── ViewScholarshipPage.tsx              # /scholarships/:id
 │   ├── ScholarshipApplicationsPage.tsx      # /scholarships/:id/applicants
 │   ├── CreateScholarshipPage.tsx            # /scholarships/create
 │   ├── UpdateScholarshipPage.tsx            # /scholarships/:id/update
 
-├── externalScholarship/
+├── externalScholarships/
 │   ├── ExternalScholarshipsPage.tsx         # /external-scholarships
 │   ├── ViewExternalScholarshipPage.tsx      # /external-scholarships/:id
 │   ├── CreateExternalScholarshipPage.tsx    # /external-scholarships/create
