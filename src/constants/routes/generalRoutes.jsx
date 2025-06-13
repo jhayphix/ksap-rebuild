@@ -22,4 +22,13 @@ export const generalRoutes = {
     permissions: ["VIEW_DASHBOARD"],
     layout: "applicant",
   },
+  authSelection: {
+    title: "Auth Selection",
+    path: `${baseRoute}/auth-selection`,
+    icon: <BsGrid size={iconSize} />,
+    end: true,
+    roles: ["GUEST", "APPLICANT", "ADMIN"],
+    permissions: [],
+    layout: "public",
+  },
 };
