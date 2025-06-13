@@ -1,22 +1,12 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+// AppRouter.tsx
+import { useRoutes } from "react-router-dom";
+import { useRouteConfig } from "@/routes/RouteConfig";
 
-import NotFoundPage from "@/pages/error/NotFoundPage";
-import PublicRoutes from "@/routes/PublicRoutes";
+const AppRouter = () => {
+  const routes = useRouteConfig();
+  const routing = useRoutes(routes);
 
-const WebRouting = () => {
-  const location = useLocation();
-
-  return (
-    <>
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={"Home Page"} />
-
-        <PublicRoutes />
-
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-    </>
-  );
+  return routing;
 };
 
-export default WebRouting;
+export default AppRouter;

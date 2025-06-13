@@ -12,7 +12,7 @@ import { searchRoutes } from "@/constants/routes/searchRoutes";
 import { baseRoute } from "@/constants/routes/config";
 
 // Context
-export const NavigationContext = createContext(null);
+const NavigationContext = createContext(null);
 
 export const useNavigationContext = () => useContext(NavigationContext);
 
