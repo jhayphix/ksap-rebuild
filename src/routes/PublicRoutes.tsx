@@ -1,4 +1,3 @@
-// routes/PublicRoutes.ts
 import { useNavigationContext } from "@/contexts/NavigationContextProvider";
 import { RouteObject } from "react-router-dom";
 import DashboardPage from "@/pages/general/DashboardPage";
