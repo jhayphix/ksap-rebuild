@@ -1,6 +1,7 @@
 // routes/PublicRoutes.ts
 import { useNavigationContext } from "@/contexts/NavigationContextProvider";
 import { RouteObject } from "react-router-dom";
+import DashboardPage from "@/pages/general/DashboardPage";
 
 export const usePublicRoutes = (): RouteObject[] => {
   const { home } = useNavigationContext();
@@ -8,7 +9,7 @@ export const usePublicRoutes = (): RouteObject[] => {
   return [
     {
       path: home.path,
-      element: <>Home Page</>,
+      element: <DashboardPage />,
     },
   ];
 };
