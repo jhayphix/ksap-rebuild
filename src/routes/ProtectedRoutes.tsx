@@ -57,7 +57,7 @@ export const useProtectedRoutes = (): RouteObject[] => {
     manageUsers,
     myApplications,
     registerApplicant,
-    updateApplicant,
+    updateApplicantProfile,
     viewApplicantProfile,
   } = useNavigationContext();
 
@@ -199,7 +199,7 @@ export const useProtectedRoutes = (): RouteObject[] => {
                   element: <ViewApplicantProfilePage />,
                 },
                 {
-                  path: updateApplicant.path,
+                  path: updateApplicantProfile.path,
                   element: <UpdateApplicantPage />,
                 },
               ],
