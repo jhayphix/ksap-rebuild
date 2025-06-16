@@ -47,25 +47,6 @@ const WebRouting = () => {
     <Routes location={location} key={location.pathname}>
       {/* ✅ Protected Routes (Only Authenticated Users) */}
       <Route element={<AuthMiddleware />}>
-        {/* ✅ Admin-Only Routes */}
-        <Route element={<AdminMiddleware />}>
-          {/* ✅ Super Admin-Only Routes */}
-          <Route element={<SuperAdminMiddleware />}>
-            <Route
-              path={viewExternalScholarshipRoute?.path}
-              element={<ViewExternalScholarshipPage />}
-            />
-            <Route
-              path={createExternalScholarshipRoute?.path}
-              element={<CreateExternalScholarshipPage />}
-            />
-            <Route
-              path={updateExternalScholarshipRoute?.path}
-              element={<UpdateExternalScholarshipPage />}
-            />
-          </Route>
-        </Route>
-
         {/* ✅ Applicant-Only Routes */}
         <Route element={<ApplicantMiddleware />}>
           {/* ✅ Unregistered Applicants Can Register */}

@@ -120,6 +120,18 @@ export const useProtectedRoutes = (): RouteObject[] => {
                   path: registerAdmin.path,
                   element: <RegisterAdminPage />,
                 },
+                {
+                  path: viewExternalScholarship.path,
+                  element: <ViewExternalScholarshipPage />,
+                },
+                {
+                  path: createExternalScholarship.path,
+                  element: <CreateExternalScholarshipPage />,
+                },
+                {
+                  path: updateExternalScholarship.path,
+                  element: <UpdateExternalScholarshipPage />,
+                },
               ],
             },
           ],
