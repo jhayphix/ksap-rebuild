@@ -13,6 +13,11 @@ import RequireNotRegisteredApplicant from "@/routes/routeGuards/RequireNotRegist
 
 // Pages
 import ViewScholarshipPage from "@/pages/scholarships/ViewScholarshipPage";
+import CreateScholarshipPage from "@/pages/scholarships/CreateScholarshipPage";
+import UpdateScholarshipPage from "@/pages/scholarships/UpdateScholarshipPage";
+import CreateExternalScholarshipPage from "@/pages/externalScholarships/CreateExternalScholarshipPage";
+import ViewExternalScholarshipPage from "@/pages/externalScholarships/ViewExternalScholarshipPage";
+import UpdateExternalScholarshipPage from "@/pages/externalScholarships/UpdateExternalScholarshipPage";
 import AdminPanelPage from "@/pages/general/AdminPanelPage";
 import EvaluateApplicationPage from "@/pages/applications/EvaluateApplicationPage";
 import RegisterAdminPage from "@/pages/auth/admin/RegisterAdminPage";
@@ -28,6 +33,11 @@ import ManageUsersPage from "@/pages/auth/ManageUsersPage";
 export const useProtectedRoutes = (): RouteObject[] => {
   const {
     viewScholarship,
+    createScholarship,
+    updateScholarship,
+    viewExternalScholarship,
+    createExternalScholarship,
+    updateExternalScholarship,
     adminPanel,
     registerAdmin,
     evaluateApplication,
@@ -36,9 +46,10 @@ export const useProtectedRoutes = (): RouteObject[] => {
     searchAndFilter,
     scholarshipApplications,
     manageUsers,
+    myApplications,
+    registerApplicant,
+    viewApplicantProfile,
   } = useNavigationContext();
-
-  console.log("adminPanel:  ", adminPanel);
 
   return [
     {
@@ -94,6 +105,14 @@ export const useProtectedRoutes = (): RouteObject[] => {
               ),
               children: [
                 {
+                  path: createScholarship.path,
+                  element: <CreateScholarshipPage />,
+                },
+                {
+                  path: updateScholarship.path,
+                  element: <UpdateScholarshipPage />,
+                },
+                {
                   path: updateAdminProfile.path,
                   element: <UpdateAdminPage />,
                 },
@@ -122,7 +141,7 @@ export const useProtectedRoutes = (): RouteObject[] => {
               ),
               children: [
                 {
-                  path: "/auth/applicant/register",
+                  path: registerApplicant.path,
                   element: <RegisterApplicantPage />,
                 },
               ],
@@ -135,11 +154,11 @@ export const useProtectedRoutes = (): RouteObject[] => {
               ),
               children: [
                 {
-                  path: "/applications/my",
+                  path: myApplications.path,
                   element: <MyApplicationsPage />,
                 },
                 {
-                  path: "/auth/applicant/profile",
+                  path: viewApplicantProfile.path,
                   element: <ViewApplicantProfilePage />,
                 },
               ],

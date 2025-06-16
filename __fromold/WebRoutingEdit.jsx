@@ -52,14 +52,6 @@ const WebRouting = () => {
           {/* ✅ Super Admin-Only Routes */}
           <Route element={<SuperAdminMiddleware />}>
             <Route
-              path={createScholarshipRoute?.path}
-              element={<CreateScholarshipPage />}
-            />
-            <Route
-              path={updateScholarshipRoute?.path}
-              element={<UpdateScholarshipPage />}
-            />
-            <Route
               path={viewExternalScholarshipRoute?.path}
               element={<ViewExternalScholarshipPage />}
             />
