@@ -23,58 +23,78 @@ export default {
         border: "hsl(var(--border))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
+
+        // Brand - general subtle theme background and contrast text
+        brand: {
           DEFAULT: "#FFFFFF",
-          2: "#f5f5f5",
-          3: "#e6e6e6",
+          subtle: "#F5F5F5",
+          faint: "#E6E6E6",
           text: "rgba(34, 34, 34, 0.88)",
-          "text-2": "rgba(51, 51, 51, 0.89)",
-          "text-3": "#444444",
+          "text-subtle": "rgba(51, 51, 51, 0.89)",
+          "text-faint": "#444444",
         },
-        secondary: {
+
+        // Primary - accent green
+        primary: {
           DEFAULT: "#0F5E3D",
-          2: "#157347",
-          3: "#D9F1E1",
+          subtle: "#157347",
+          faint: "#D9F1E1",
           text: "#FFFFFF",
-          "text-2": "#FFFFFF",
-          "text-3": "#222222",
+          "text-subtle": "#FFFFFF",
+          "text-faint": "#222222",
         },
-        blue: {
+
+        // Info / Blue
+        info: {
           DEFAULT: "#0D6EFD",
-          light: "#CFE2FF",
-          light2: "#D9E6FF",
+          subtle: "#CFE2FF",
+          faint: "#D9E6FF",
         },
+
+        // Success - positive messages
         success: {
           DEFAULT: "#198754",
-          light: "#D9F1E1",
-          light2: "#EBFDF1",
+          subtle: "#D9F1E1",
+          faint: "#EBFDF1",
         },
+
+        // Warning - caution, alerts
         warning: {
           DEFAULT: "#FFC107",
           text: "#CC8800",
-          light: "#FFF3CD",
-          light2: "#FFF8D1",
+          subtle: "#FFF3CD",
+          faint: "#FFF8D1",
         },
+
+        // Danger - errors
         danger: {
           DEFAULT: "#DC3545",
-          light: "#F8D7DA",
-          light2: "#F9D8DC",
+          subtle: "#F8D7DA",
+          faint: "#F9D8DC",
         },
-        light: {
-          DEFAULT: "#FFFFFF",
-          2: "#E8E8E8",
-          3: "#D6D6D6",
+
+        // Neutral - Light gray range
+        neutral: {
+          white: "#FFFFFF",
+          subtle: "#E8E8E8",
+          muted: "#D6D6D6",
         },
+
+        // Dark - general dark tones
         dark: {
           DEFAULT: "#222222",
-          2: "#333333",
-          3: "#444444",
+          medium: "#333333",
+          muted: "#444444",
         },
+
+        // Gray - UI gray scale
         gray: {
-          DEFAULT: "#2F2F2F",
-          2: "#6C757D",
-          3: "#BDBDBD",
+          dark: "#2F2F2F",
+          medium: "#6C757D",
+          light: "#BDBDBD",
         },
+
+        // Utility palettes
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
