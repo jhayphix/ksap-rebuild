@@ -19,10 +19,16 @@ import CreateExternalScholarshipPage from "@/pages/externalScholarships/CreateEx
 import ViewExternalScholarshipPage from "@/pages/externalScholarships/ViewExternalScholarshipPage";
 import UpdateExternalScholarshipPage from "@/pages/externalScholarships/UpdateExternalScholarshipPage";
 import AdminPanelPage from "@/pages/general/AdminPanelPage";
+
 import EvaluateApplicationPage from "@/pages/applications/EvaluateApplicationPage";
+import CreateApplicationPage from "@/pages/applications/CreateApplicationPage";
+import UpdateApplicationPage from "@/pages/applications/UpdateApplicationPage";
+import ViewApplicationPage from "@/pages/applications/ViewApplicationPage";
+
 import RegisterAdminPage from "@/pages/auth/admin/RegisterAdminPage";
 import UpdateAdminPage from "@/pages/auth/admin/UpdateAdminPage";
 import RegisterApplicantPage from "@/pages/auth/applicant/RegisterApplicantPage";
+import UpdateApplicantPage from "@/pages/auth/applicant/UpdateApplicantPage";
 import ViewApplicantProfilePage from "@/pages/auth/applicant/ViewApplicantProfilePage";
 import ViewAdminProfilePage from "@/pages/auth/admin/ViewAdminProfilePage";
 import MyApplicationsPage from "@/pages/applications/MyApplicationsPage";
@@ -40,6 +46,9 @@ export const useProtectedRoutes = (): RouteObject[] => {
     updateExternalScholarship,
     adminPanel,
     registerAdmin,
+    viewApplication,
+    createApplication,
+    updateApplication,
     evaluateApplication,
     viewAdminProfile,
     updateAdminProfile,
@@ -48,6 +57,7 @@ export const useProtectedRoutes = (): RouteObject[] => {
     manageUsers,
     myApplications,
     registerApplicant,
+    updateApplicant,
     viewApplicantProfile,
   } = useNavigationContext();
 
@@ -145,6 +155,7 @@ export const useProtectedRoutes = (): RouteObject[] => {
             </RequireApplicant>
           ),
           children: [
+            // Require Not Registered Applicant
             {
               element: (
                 <RequireNotRegisteredApplicant>
@@ -158,6 +169,8 @@ export const useProtectedRoutes = (): RouteObject[] => {
                 },
               ],
             },
+
+            // Require registrared Applicant
             {
               element: (
                 <RequireRegisteredApplicant>
@@ -170,8 +183,24 @@ export const useProtectedRoutes = (): RouteObject[] => {
                   element: <MyApplicationsPage />,
                 },
                 {
+                  path: viewApplication.path,
+                  element: <ViewApplicationPage />,
+                },
+                {
+                  path: createApplication.path,
+                  element: <CreateApplicationPage />,
+                },
+                {
+                  path: updateApplication.path,
+                  element: <UpdateApplicationPage />,
+                },
+                {
                   path: viewApplicantProfile.path,
                   element: <ViewApplicantProfilePage />,
+                },
+                {
+                  path: updateApplicant.path,
+                  element: <UpdateApplicantPage />,
                 },
               ],
             },

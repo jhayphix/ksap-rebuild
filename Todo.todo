@@ -2,12 +2,12 @@ WORK ON NAVIGATIONS:
     ✔ Create navigation constant @done(25-06-12 11:01)
     ✔ Create navigation context ( ask about using hooks) @done(25-06-12 11:01)
     ✔ Create all pages @done(25-06-13 18:25)
-    ☐ Create auth context provider
 
 CREATE ROUTING FOR ALL PAGES:
-    ☐ Protected routing
+    ✔ Protected routing @done(25-06-16 17:29)
 
 CREATE STYLES AND DIRECTIVES:
+    ☐ Colors
 
 CREATE LAYOUT:
     ☐ Create sidenavbar, top nav, main container and footer
