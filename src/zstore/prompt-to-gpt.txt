@@ -1,0 +1,26 @@
+Now how will the middleware be in a case of these nested way
+
+Protected Middleware (
+    ViewScholarshipPage
+
+    AdminMiddleware (
+        AdminPanelPage
+        EvaluateApplicationPage
+
+        SuperAdminMiddleware (
+            UpdateAdminPage
+            RegisterAdminPage
+        )
+    )
+
+    ApplicantMiddleware (
+        ApplicantNotRegisteredMiddleware (  
+            RegisterApplicantPage
+        )
+
+        RegisteredMiddleware (
+            MyApplicationsPage
+            ViewApplicantProfilePage
+        )
+    )
+)

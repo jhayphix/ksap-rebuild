@@ -6,6 +6,7 @@ import { generalRoutes } from "@/constants/routes/generalRoutes";
 import { authRoutes } from "@/constants/routes/authRoutes";
 import { userManagementRoutes } from "@/constants/routes/userManagementRoutes";
 import { applicationRoutes } from "@/constants/routes/applicationRoutes";
+import { adminRoutes } from "@/constants/routes/adminRoutes";
 import { scholarshipRoutes } from "@/constants/routes/scholarshipRoutes";
 import { externalScholarshipRoutes } from "@/constants/routes/externalScholarshipRoutes";
 import { searchRoutes } from "@/constants/routes/searchRoutes";
@@ -28,6 +29,7 @@ const NavigationContextProvider = ({ children }) => {
   const adminOnlyNavRoutes = [
     searchRoutes.searchAndFilter,
     userManagementRoutes.manageUsers,
+    adminRoutes.adminPanel,
   ];
 
   const superAdminOnlyNavRoutes = [
@@ -59,6 +61,7 @@ const NavigationContextProvider = ({ children }) => {
     navRoutesByRole,
     ...generalRoutes,
     ...authRoutes,
+    ...adminRoutes,
     ...userManagementRoutes,
     ...applicationRoutes,
     ...scholarshipRoutes,

@@ -20,7 +20,7 @@ export const generalRoutes = {
     end: true,
     roles: ["APPLICANT", "ADMIN"],
     permissions: ["VIEW_DASHBOARD"],
-    layout: "applicant",
+    layout: "public",
   },
   authSelection: {
     title: "Auth Selection",

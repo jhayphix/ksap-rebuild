@@ -18,7 +18,7 @@ export const scholarshipRoutes = {
     permissions: ["VIEW_SCHOLARSHIP"],
     layout: "applicant",
   },
-  scholarshipApplicants: {
+  scholarshipApplications: {
     title: "Scholarship Applicants",
     path: `${baseRoute}/scholarships/applications/:id`,
     getPath: (id: string) => `${baseRoute}/scholarships/applications/${id}`,
