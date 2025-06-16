@@ -1,6 +1,16 @@
 @tailwind base;
 
 @layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  
+  /* Inherit font from system or set fallback */
+  html {
+    font-family: system-ui, sans-serif;
+  }
+
   /* Custom scrollbar */
   ::-webkit-scrollbar {
     width: 6px;
