@@ -5,10 +5,8 @@
     @apply bg-background text-foreground;
   }
 
-  
-  /* Inherit font from system or set fallback */
-  html {
-    font-family: system-ui, sans-serif;
+   html {
+    @apply font-sans;
   }
 
   /* Custom scrollbar */

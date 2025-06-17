@@ -2,7 +2,6 @@
 
 @layer utilities {
 
-
   .bg-brand {
     @apply text-brand-text
   }
@@ -13,13 +12,26 @@
     @apply text-brand-text-faint
   }
 
-.bg-primary {
-  @apply text-primary-text
-}
-.bg-primary-subtle {
-  @apply text-primary-text-subtle
-}
-.bg-primary-faint {
-  @apply text-primary-text-faint
-}
+    .bg-primary {
+    @apply text-primary-text
+    }
+    .bg-primary-subtle {
+    @apply text-primary-text-subtle
+    }
+    .bg-primary-faint {
+    @apply text-primary-text-faint
+    }
+
+    /* Width */
+  .side-width {
+    @apply w-side-default sm:w-side-sm md:w-side-md lg:w-side-lg;
+  }
+
+  .minimal-width {
+    @apply w-minimal-md lg:w-minimal-lg;
+  }
+
+  .main-content-width {
+    @apply w-full lg:w-main-default;
+  }
 }

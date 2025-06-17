@@ -123,6 +123,7 @@ export default {
 
         "minimal-lg": "5vw", // Minimal collapsed version
         "minimal-md": "7vw",
+        "main-default": "calc(100vw - 65vw)", // Add this for main content width
       },
       zIndex: {
         1050: "1050",

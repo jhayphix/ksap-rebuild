@@ -14,7 +14,7 @@ const AppLayout = ({ children }) => {
 
         {/* Main Content */}
         <main
-          className="flex-1 overflow-y-auto p-6"
+          className="main-content-width flex-1 overflow-y-auto p-6"
           style={{ height: "500vh" }}
         >
           {children}

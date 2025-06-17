@@ -1,0 +1,18 @@
+form a utility class from these 
+
+width: {
+        "side-lg": "20vw", // For large sidebar
+        "side-md": "30vw", // Medium
+        "side-sm": "35vw", // Smaller sidebar
+        "side-default": "65vw", // Possibly main content area when sidebar is open
+
+        "minimal-lg": "5vw", // Minimal collapsed version
+        "minimal-md": "7vw",
+      },
+
+
+
+    /* Width */
+    .side-width {
+      @apply w-side-default sm:w-side-sm lg:w-side-lg md:w-side-md
+    }
