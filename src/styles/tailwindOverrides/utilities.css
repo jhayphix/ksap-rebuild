@@ -1,5 +1,25 @@
 @tailwind utilities;
 
 @layer utilities {
-  
+
+
+  .bg-brand {
+    @apply text-brand-text
+  }
+  .bg-brand-subtle {
+    @apply text-brand-text-subtle
+  }
+  .bg-brand-faint {
+    @apply text-brand-text-faint
+  }
+
+.bg-primary {
+  @apply text-primary-text
+}
+.bg-primary-subtle {
+  @apply text-primary-text-subtle
+}
+.bg-primary-faint {
+  @apply text-primary-text-faint
+}
 }
